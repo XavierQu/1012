@@ -1,6 +1,13 @@
 // import vars and modules
 @import '_vars';
 
+//import required modelus
+@import 'modules/_header';
+@import 'mofules/_classcontent';
+@import 'modules/_footer';
+
+
+// these are the main styles -s sidebar;
 .sidebar { background-color: $bgcolor: rgb(204, 204, 204) }
 
 .header { background-color: $bgcolor: rgb(255, 255, 255)}

@@ -21,6 +21,17 @@
         })
     }
 
+    function getData() {
+        fetch('admin/connect.php') // run a DB query
+        .then(res => res.json())
+        .then(data => {
+            setCourseInfo(data[0]);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+    }
+
     // call the setCourseInfo funciton
     setCourseInfo(classData);
 })();
